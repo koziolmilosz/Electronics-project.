@@ -1,3 +1,44 @@
+# 🚗 Arduino OLED Car Monitor (Battery + Coolant + Oil Temp)
+
+A compact Arduino-based vehicle monitoring system using an SSD1306 OLED display.  
+Designed for real-time display of:
+
+- 🔋 Battery voltage  
+- 🌡️ Coolant temperature (CLT)  
+- 🛢️ Oil temperature (logarithmic sensor calibration)  
+
+Includes a startup logo screen and a visual coolant temperature bar with overheat warning.
+
+
+## 🧰 Hardware Requirements
+
+- Arduino (Uno / Nano / compatible)
+- SSD1306 OLED Display (128x64, I2C)
+- NTC temperature sensors:
+  - Coolant sensor
+  - Oil temperature sensor
+- Voltage divider (for battery monitoring)
+- Resistors (for biasing sensors)
+
+
+---
+
+## 🔌 Wiring
+
+| Function        | Arduino Pin |
+|----------------
+| Battery input  | A3         
+| Coolant sensor | A1         
+| Oil sensor     | A2        
+| PWM output     | D9         
+| OLED SDA       | A4         
+| OLED SCL       | A5         
+
+
+
+
+
+
 Features in this code, that you can adjust : 
 1. Resistance-Temperature relation of the sensor in 
 - 5 point table for oil sensor 
